@@ -1,0 +1,5 @@
+{
+  "name": "Bingo Night Live",
+  "description": "An interactive Bingo caller application designed for live events. It features a host control panel and a separate public display with animations, sound effects, and themes. Includes options for 75 and 90-ball games, number history, and a celebratory 'Bingo!' effect.",
+  "requestFramePermissions": []
+}

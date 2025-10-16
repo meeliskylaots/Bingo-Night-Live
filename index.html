@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo Night Live</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes spin {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+      }
+      .animate-spin-y-fast {
+        animation: spin 0.5s linear infinite;
+      }
+      @keyframes flash {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7); }
+        50% { transform: scale(1.05); box-shadow: 0 0 40px 20px rgba(255, 255, 100, 1); }
+      }
+      .animate-flash {
+        animation: flash 0.6s ease-in-out;
+      }
+       @keyframes confetti-fall {
+        0% { transform: translateY(-100vh) rotateZ(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotateZ(720deg); opacity: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
